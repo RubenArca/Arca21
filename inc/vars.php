@@ -1,17 +1,19 @@
 <?php
   // Ruta local
-  /*$urlabsoluta = "./";
+  $urlabsoluta = "./";
   $servername = "localhost";
   $username = "root";
   $password = "";
-  $database = "arca21";*/
+  $database = "arca21";
 
   // Ruta web
+  /*
   $urlabsoluta = "./";
   $servername = "PMYSQL127.dns-servicio.com:3306";
   $username = "ruben";
   $password = "m4btQ#54";
   $database  = "7442508_aresresidencial";
+  */
 
   //Nombre de la web
   $web = "Arca XXI";
