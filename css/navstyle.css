@@ -1,0 +1,195 @@
+/**************/
+/* NAVEGACIÓN */
+/* Tamaño del logo superior */
+#logo_superior{
+  height: 2em;
+}
+/* Características del titulo del logo */
+#titulo_logo{
+  font-style: italic;
+  font-family: Lora, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+.web {
+  float: left;
+}
+.logo-hide {
+  float: left;
+}
+.logo-nav-container{
+  /* Los elementos se ponen de izquierda a derecha ocupando todo */
+  display: flex;
+  /* Se reparte el espacio entre los elementos */
+  justify-content: space-between;
+  /* Que se alinee centrado en vertical */
+  align-items: center;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.header{
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+}
+.nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav ul li{
+  /* en linea en vez de en vertical */
+  display: inline-block;
+  font-size: 1rem;
+}
+.nav ul li a{
+  display: block;
+  padding: 0.5rem 1rem;
+  /* que pase de poco a poco al cambiar a hover */
+  transition: all 0.4s linear;
+}
+.nav ul li a:hover{
+  background: #4a4a4a;
+  border-radius: 5px;
+}
+.logo-titulo{
+  display: flex;
+  align-items: center;
+}
+.nav .icon {
+  display: none;
+  margin-top: 0.5rem;
+}
+#viviendas-arrow-down {
+  padding-left: 0.5rem;
+}
+/***********/
+/* SUBMENÚ */
+
+/* Ocultarlo siempre */
+.nav li ul {
+	display:none;
+	position:absolute;
+  width: 40%;
+	min-width:140px;
+}
+/* Aparecer submenu cuando se pasa por encima */
+.nav li:hover > ul {
+	display:block;
+  background: #000;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nav li ul li {
+	position: relative;
+  width: 24%
+}
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+/* Página activa */
+.nav  li.active {
+  background: #9a9a9a;
+  border-radius: 5px;
+}
+
+/* Responsive hacer aparecer el icono de menú y mantener activa la página en la cuál se encuentra */
+@media screen and (max-width: 1250px) {
+  .nav li:not(.active) {
+    display: none;
+  }
+  .nav li.active{
+    background: #000;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  /* Submenu */
+  .nav li ul {
+    width: 12rem;
+    padding: 0.4rem;
+    overflow-y: scroll;
+    height: 20rem;
+    border: 0.08rem solid white;
+    border-radius: 0.2em;
+  }
+  .nav li ul li {
+    width: 100%;
+    padding: 0rem;
+  }
+  .nav li ul li a {
+    padding: 0.5rem;
+  }
+  #list-none {
+    display: none;
+  }
+  .nav li.active ul li {
+    display: block;
+  }
+}
+/* Responsive TABLET de NAV */
+@media screen and (max-width: 900px) {
+  .logo-hide {
+    display: none;
+  }
+}
+
+/* Responsive MOVIL de NAV */
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    padding: 0.25rem 0rem;
+  }
+  .header .container {
+    padding: 0;
+  }
+  #titulo_logo {
+    font-size: 0.75rem;
+    letter-spacing: 0.1rem;
+  }
+  .nav ul li {
+    font-size: 0.75rem;
+  }
+  .nav .icon {
+    margin-top: 0.3rem;
+  }
+  .logo-nav-container {
+    width: 95%;
+    padding: 0.5rem;
+  }
+}
+
+/* Responsive MOVIL PEQUEÑO de NAV */
+@media screen and (max-width: 380px) {
+  #titulo_logo {
+    display: none;
+  }
+}

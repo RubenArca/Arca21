@@ -1,0 +1,57 @@
+/****************/
+.per4 {
+  width: 50%;
+  display: flex;
+  float: left;
+  text-align: center;
+  padding: 0.5rem;
+}
+.per4 ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.per4-text {
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.6667;
+}
+.per4-img img {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 0.8rem;
+}
+.line-tablet {
+  width: 50%;
+}
+
+/* Responsive TABLET */
+@media screen and (max-width: 900px) {
+  .per4 {
+    width: 50%;
+  }
+  .per4 img {
+    width: 100%;
+    height: inherit;
+    text-align: center;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .line-tablet {
+    display: flex;
+    width: 100%;
+  }
+}
+
+/* Responsive MOVIL */
+@media screen and (max-width: 600px) {
+  .per4 {
+    width: 100%;
+  }
+  .line-tablet {
+    display: flow-root;
+  }
+}

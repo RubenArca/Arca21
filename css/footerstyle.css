@@ -1,0 +1,71 @@
+/**************************/
+/* ESTILOS DEL footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2a2a;
+  color: white;
+  font-family: "Gentium Basic", serif;
+  padding: 1rem 8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6667;
+}
+.footer-izq{
+  width: 33.33333%;
+}
+.footer-izq a{
+  color: white;
+}
+.footer-cent{
+  color: white;
+  line-height: 2;
+  text-align: center;
+  width: 33.33333%;
+}
+.footer-cent a{
+  color: white;
+}
+.footer-der {
+  text-align: right;
+  width: 33.333333333%
+}
+#logo-footer{
+  height: 5em;
+}
+
+/* Responsive TABLET de FOOTER */
+@media screen and (max-width: 900px) {
+  footer {
+    padding: 1rem;
+  }
+  #logo-footer{
+    height: 3rem;
+  }
+}
+
+/* Responsive de MOVIL FOOTER */
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+    padding: 1rem;
+  }
+  .footer-izq {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .footer-cent {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .footer-der {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #logo-footer{
+    height: 2rem;
+  }
+}

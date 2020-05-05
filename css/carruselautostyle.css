@@ -1,0 +1,76 @@
+/*****************************/
+/* ESTILOS DEL CARRUSEL  AUTO*/
+#carrusel {
+  float:left;
+  width: 100%;
+  overflow:hidden;
+  height: 403.20px;
+  position:relative;
+  margin-bottom: 0;
+}
+
+#carrusel .left-arrow {
+  color: black;
+  position:absolute;
+  left:10px;
+  z-index:1;
+  top:50%;
+  margin-top:-9px;
+}
+
+#carrusel .right-arrow {
+  color: black;
+  position:absolute;
+  right:10px;
+  z-index:1;
+  top:50%;
+  margin-top:-9px;
+}
+
+.carrusel {
+  width:6000%;
+  left:0px;
+  position:absolute;
+  z-index:0;
+}
+
+.carrusel>div {
+  float: left;
+  height: 312px;
+  margin-right: 5px;
+  width: 555px;
+  text-align:center;
+}
+
+.carrusel img {
+  cursor:pointer;
+  width: 100%;
+}
+
+/* Responsive del carrusel de imagenes MOVIL en el home*/
+@media screen and (max-width: 900px) {
+  .carrusel>div {
+    width: 750px;
+  }
+}
+
+/* Responsive del carrusel de imagenes MOVIL en el home*/
+@media screen and (max-width: 600px) {
+  .home-carrusel {
+    float: left;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: block;
+    padding-left: 0;
+  }
+  #carrusel {
+    width: 100%;
+    height: 312px;
+  }
+  .carrusel img {
+    width: 354px;
+  }
+  .carrusel>div {
+    width: 354px;
+  }
+}

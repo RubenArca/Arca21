@@ -1,0 +1,63 @@
+/*******************/
+/*  ESTILOS HOME  */
+.home-izq {
+  display: flex;
+  float: left;
+  width: 50%;
+}
+.home-der {
+  display: flex;
+  float: left;
+  width: 50%;
+}
+.home-text {
+  width: 100%;
+  float: left;
+  padding-bottom: 1rem;
+}
+.home-map {
+  width: 100%;
+  float: left;
+}
+.home-izq ul {
+  list-style: none;
+  padding: 0;
+}
+.home-map {
+  width: 50%;
+  float: left;
+}
+.home-map iframe {
+  width: 100%;
+}
+.home-datos {
+  width: 50%;
+  float: left;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+  line-height: 2;
+}
+.home-carrusel {
+  width: 100%;
+}
+
+/* Responsive de HOME */
+@media screen and (max-width: 900px) {
+  .home-izq {
+    width: 100%;
+  }
+  .home-der {
+    width: 100%;
+  }
+}
+
+/* Responsive MOVIL de HOME */
+@media screen and (max-width: 600px) {
+  .home button {
+    width: 100%;
+  }
+  .home-datos {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

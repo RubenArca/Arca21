@@ -1,0 +1,111 @@
+.tabiqueria h1 {
+  color: rgba(104,29,29,1);
+  font-family: "PT Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  padding: 1rem 0;
+}
+.tabiqueria .text-title {
+
+}
+.tabiqueria .half {
+  float: left;
+  display: flex;
+  width: 50%;
+}
+.tabiqueria .half img {
+  width: 100%;
+}
+.tabiqueria .half ul {
+  list-style: none;
+  padding-left: 1.5 rem;
+}
+.tabiqueria .material-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.tabiqueria .material-text {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+}
+.tabiqueria button {
+  width: 100%;
+  margin: 0.7rem 0;
+}
+.tabiqueria h2 {
+  width: 100%;
+  text-align: center;
+  padding: 0.9rem 0;
+}
+.tabiqueria .three {
+  float: left;
+  display: flex;
+  width: 33.3333333333%;
+}
+.tabiqueria .three ul {
+  padding: 0;
+  list-style: none;
+}
+.tabiqueria img {
+  width: 100%;
+}
+.tabiqueria .three .three-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+.tabiqueria .three .three-text {
+  font-family: Merriweather, serif;
+  font-size: 1.2rem;;
+  font-weight: 400;
+  line-height: 1.6667;
+  text-align: center;
+  padding: 0.5rem;
+}
+.tabiqueria-file{
+  width: 33.3333333%;
+  margin: 0rem 0.7rem;
+}
+.responsive {
+  display: none;
+}
+
+/* Responsive TABLET */
+@media screen and (max-width: 900px) {
+  .tabiqueria .half {
+    width: 100%;
+  }
+  .tabiqueria .half ul {
+    padding-left: 0;
+  }
+  .tabiqueria .three {
+    width: 50%;
+  }
+  .tabiqueria .tabiqueria-file {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  .responsive-none {
+    display: none;
+  }
+  .responsive {
+    display: flow-root;
+  }
+}
+
+/* Responsive MOVIL */
+@media screen and (max-width: 600px) {
+  .tabiqueria .three {
+    width: 100%;
+  }
+  .tabiqueria .tabiqueria-file {
+    width: 100%;
+    margin: 0;
+  }
+}

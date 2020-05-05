@@ -1,0 +1,50 @@
+/* ESTILOS GENERALES DE ARCA XXI */
+/********************************/
+body {
+  padding: 0;
+  margin: 0;
+}
+main {
+  background-color: #9a9a9a;
+  padding-top: 4rem;
+}
+.text-note {
+  padding-bottom: 2rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+.line {
+  display: flex;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+button {
+  background: #4a4a4a;
+  border-radius: 5px;
+  border: solid white;
+  color: white;
+  font-style: italic;
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
+  transition-duration: 1s;
+}
+button:hover {
+  background: white;
+  font-weight: bold;
+  border: solid #4a4a4a;
+  color: #4a4a4a;
+}
+
+/* Responsive TABLET */
+@media screen and (max-width: 900px) {
+  .line {
+    display: flow-root;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+/* Responsive MOVIL */
+@media screen and (max-width: 600px) {
+}

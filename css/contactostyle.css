@@ -1,0 +1,84 @@
+.contacto-texto {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.contacto-form {
+  width: 50%;
+}
+.contacto-map {
+  width: 50%;
+  padding-bottom: 2rem;
+}
+.contacto-form input{
+  width: 90%;
+  border-color: #9a9a9a;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+}
+.contacto-form-line label{
+  margin-bottom: -0.4rem;
+}
+.contacto-form-line textarea{
+  width: 90%;
+  margin-bottom: 1rem;
+  border-color: #9a9a9a;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+}
+.contacto-form-line p{
+  margin-top: 1rem;
+  text-align: center;
+  width: 90%;
+}
+.contacto-form-line a{
+  color: black;
+}
+.contacto-form-line .contacto-enviar{
+  background: #2a2a2a;
+  color: white;
+  transition: 1s;
+}
+.contacto-enviar:hover {
+  background: white;
+  font-weight: bold;
+  border: solid #4a4a4a;
+  color: #4a4a4a;
+}
+.contacto-form-line-none {
+  display: none;
+}
+.contacto-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive de CONTACTO */
+@media screen and (max-width: 900px) {
+  .line {
+    display: flex;
+  }
+}
+
+/* Responsive de CONTACTO */
+@media screen and (max-width: 600px) {
+  .line {
+    display: flow-root;
+  }
+  .contacto-form {
+    width: 100%;
+  }
+  .contacto-form input {
+    width: 100%;
+  }
+  .contacto-form textarea {
+    width: 100%;
+  }
+  .contacto-map {
+    width: 100%;
+  }
+  .contacto-map iframe {
+    width: 100%;
+  }
+}
